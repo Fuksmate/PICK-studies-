@@ -1,0 +1,11 @@
+.about {
+  width: 60%;
+  margin-left: 20%;
+}
+.wrapper {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
