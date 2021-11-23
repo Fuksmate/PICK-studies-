@@ -34,9 +34,6 @@ li a:hover {
   transition: 0.6s;
   color: $textColor;
 }
-main {
-  height: 10000px;
-}
 .content {
   color: black;
 }
@@ -44,15 +41,14 @@ h2 {
   text-transform: uppercase;
   font-size: 27pt;
   font-family: "raleway-bold";
-
 }
-h2:first-child::after{
-  position:relative;
-  top:1px;
-  display:inline-block;
+h2:first-child::after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
   padding-bottom: 12px;
-  border-bottom:4px solid rgb(75, 74, 74);
-  content:'About';
+  border-bottom: 4px solid rgb(75, 74, 74);
+  content: "About";
 }
 .sticky {
   position: fixed;
@@ -63,9 +59,9 @@ h2:first-child::after{
   transition: 1s;
   padding: 2px 0 !important;
 }
-.square{
+.square {
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   width: 150px;
   height: 150px;
@@ -73,14 +69,55 @@ h2:first-child::after{
   position: relative;
   border-radius: 16px;
 }
-.square i{
+.square i {
   position: absolute;
-  left:50%;
+  left: 50%;
   top: 50%;
-  transform: translate(-50%,-43%);
+  transform: translate(-50%, -43%);
   font-size: 90px;
   color: white;
 }
-.about{
+.about {
   position: relative;
+}
+img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+.profil{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profilAbout{
+  width: 300px;
+}
+.skillSet div{
+  margin:10px;
+  color: white;
+  background-color: $addColor;
+  border-radius: 16px;
+}
+
+.tile div{
+  text-align: center;
+  position: relative;
+  top:50%;
+  transform: translate(0%,-70%);
+}
+.portfolio{
+  height: 300px;
+  background-color:  red;
+  margin: 20px;
+}
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  color: white;
+  text-align: center;
+  background-color: black;
 }
