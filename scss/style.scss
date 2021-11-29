@@ -1,33 +1,5 @@
 @import "var.scss";
 
-//NAV
-#navbar {
-  width: 100vw;
-  background-color: rgb(65, 65, 65);
-  border-bottom: 2px solid $addColor;
-  background-color: #333;
-  font-size: 18px;
-  padding: 16px 0;
-}
-ul {
-  list-style-type: none;
-  margin: 0 0 0 400px;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  text-transform: uppercase;
-  display: block;
-  color: white;
-  text-align: center;
-  padding-left: 25px;
-  text-decoration: none;
-  transform: 1s;
-}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -95,12 +67,6 @@ img {
 .profilAbout{
   width: 300px;
 }
-.skillSet div{
-  margin:10px;
-  color: white;
-  background-color: $addColor;
-  border-radius: 16px;
-}
 
 .tile div{
   text-align: center;
@@ -113,11 +79,16 @@ img {
   background-color:  red;
   margin: 20px;
 }
+.technologyName li{
+  padding: 20px;
+  text-align: center;
+}
+.technologyName{
+  margin:  0px;
+}
 .footer {
   width: 100%;
   height: 100vh;
-  background-color: red;
   color: white;
   text-align: center;
-  background-color: black;
 }

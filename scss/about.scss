@@ -1,5 +1,18 @@
 @import "var.scss";
-.sticky {
+
+@media screen and (max-width: 768px) {
+  .skillSet .tile {
+    margin-bottom: 20px;
+    background-color: $addColor;
+    border-radius: 16px;
+  }
+  .tile div {
+    padding: 6px;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  .sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -37,24 +50,33 @@
     background-position: center;
     border-radius: 16px;
   }
-  .profil{
+  .profil {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .profilAbout{
+  .profilAbout {
     width: 300px;
   }
-  .skillSet div{
-    margin:10px;
+  .skillSet div {
+    margin: 10px;
     color: white;
     background-color: $addColor;
     border-radius: 16px;
   }
-  
-  .tile div{
+
+  .tile div {
     text-align: center;
     position: relative;
-    top:50%;
-    transform: translate(0%,-70%);
+    top: 50%;
+    transform: translate(0%, -70%);
   }
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+/* Medium devices (desktops, 992px and up) */
+
+/* Large devices (large desktops, 1200px and up) */
