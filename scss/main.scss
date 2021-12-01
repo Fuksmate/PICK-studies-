@@ -5,6 +5,7 @@
 @import "footer.scss";
 @import "navbar.scss";
 @import "about.scss";
+
 html,
 body {
   font-family: "Vesper Libre", serif;
@@ -44,11 +45,11 @@ body {
   padding: 10px 20px;
   transition: all 0.5s;
 }
-.button:hover{
+.button:hover {
   background-color: $addColor;
   border-color: $addColor;
 }
-.button i{
+.button i {
   position: absolute;
   right: 19px;
 }
@@ -74,15 +75,15 @@ $shadow: ();
 }
 
 @for $i from 1 through $n {
-  $v: random(90) + 9; // left
-  $h: random(250) + 50; // top
-  $d: random(30) + 3; // 秒數
+  $v: random(90) + 9;
+  $h: random(700) + 50;
+  $d: random(30) + 3;
   .meteor-#{$i} {
     position: absolute;
     top: $h + px;
     left: $v * 1%;
-    width: 300px;
     height: 1px;
+    width: 100px;
     transform: rotate(-45deg);
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
     animation: meteor $d + s linear infinite;
@@ -95,6 +96,16 @@ $shadow: ();
       margin-top: -2px;
       background: rgba(#fff, 0.7);
       box-shadow: 0 0 15px 3px #fff;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .meteor-#{$i} {
+      width: 100px;
+    }
+  }
+  @media screen and (min-width: 1170px) {
+    .meteor-#{$i} {
+      width: 300px;
     }
   }
 }

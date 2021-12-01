@@ -1,5 +1,21 @@
 @import "var.scss";
 
+.container {
+  margin-top: 10vh;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footerDown {
+  background-color: #1b242f;
+  height: 100px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0%;
+  color: $textColor;
+}
 .footer {
   background-color: rgb(65, 65, 65);
   position: relative;
@@ -21,7 +37,6 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type="submit"] {
   background-color: $textColor;
   color: white;
@@ -30,21 +45,13 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-.container {
-  margin-top: 10vh;
-  border-radius: 5px;
-  padding: 20px;
-  width: 30%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+@media screen and (max-width: 768px) {
+  .container {
+    width: 60%;
+  }
 }
-.footerDown {
-  background-color: #1b242f;
-  height: 200px;
-  width: 100vw;
-  position: absolute;
-  bottom: 0%;
-  color: $textColor;
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 30%;
+  }
 }
