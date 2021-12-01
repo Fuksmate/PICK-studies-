@@ -48,14 +48,14 @@
       <div class="text">
         <p>Hello, I'm <span class="name">Łukasz Fuchs</span>.</p>
       </div>
-      <div class="button">Look my CV<i class="icon-right-outline"></i></div>
+      <a href="#portfolio"><div class="button">Look my CV<i class="icon-right-outline"></i></div></a>
     </div>
     <nav id="navbar">
       <ul>
         <li><a href="default.asp" class="name">Home</a></li>
-        <li><a href="news.asp">About</a></li>
-        <li><a href="contact.asp">Portfolio</a></li>
-        <li><a href="about.asp">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main class="content">
@@ -72,7 +72,7 @@
           </div>
           <div class="about">
             <div class="square"><i class="icon-laptop"></i></div>
-            <h3>About</h3>
+            <h3 id="about">About</h3>
             <div class="aboutHobby">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a
               egestas ante.
@@ -116,7 +116,7 @@
             <div class="tile"><div>Node</div></div>
           </div>
         </section>
-        <h2>Portfolio</h2>
+        <h2 id="portfolio">Portfolio</h2>
         <ul class="technologyName">
           <li>React</li>
           <li>Vue</li>
@@ -137,7 +137,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <h3>Contact</h3>
+        <h3 id="contact">Contact</h3>
         <form action="action_page.php">
           <label for="fname">First Name</label>
           <input
@@ -150,7 +150,7 @@
           <label for="lname">Last Name</label>
           <input type="email" id="lname" name="email" placeholder="Your email""
           />
-          <label for="subject">Subject</label>
+          <label for="subject">Wyślij</label>
           <textarea
             id="subject"
             name="subject"

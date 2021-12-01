@@ -5,7 +5,6 @@
   border-bottom: 2px solid $addColor;
   background-color: #333;
   font-size: 18px;
-  padding: 16px 0;
 }
 ul {
   list-style-type: none;
@@ -20,15 +19,21 @@ li {
   ul {
     list-style-type: none;
     overflow: hidden;
+    margin: 0;
   }
-  li {
+  li a{
     float: left;
+    padding: 0 10px;
+    text-decoration: none;
   }
-  #navbar ul{
-    display: none;
+  #navbar ul {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1170px) {
+  #navbar{
+    padding: 16px 0;
+  }
   ul {
     list-style-type: none;
     margin: 0 0 0 400px;

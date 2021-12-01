@@ -24,7 +24,6 @@ body {
 }
 .flex {
   position: absolute;
-  top: 35%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -143,4 +142,14 @@ $shadow: ();
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+@media screen and (max-width: 768px) {
+  .flex {
+    top: 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex {
+    top: 35%;
+  }
 }
